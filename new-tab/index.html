@@ -17,12 +17,14 @@
 
 
     <script>
-        const time = document.getElementById('time');
-        const date = document.getElementById('date');
 
-        time.innerHTML = new Date().toLocaleTimeString()
+        // Running Clock
+        setInterval(() => {
+            const time = document.getElementById('time').innerHTML = new Date().toLocaleTimeString()
+            
+        })
         
-
+        
         const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"];
         let dateObj = new Date();
@@ -31,7 +33,7 @@
         let year = dateObj.getFullYear();
         let output = `(${day} ${month}, ${year})`;
 
-        date.innerHTML = output;
+        document.getElementById('date').innerHTML = output;
     </script>
 </body>
 </html>
