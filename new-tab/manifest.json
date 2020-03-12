@@ -1,0 +1,7 @@
+{
+  "name": "Beautiful New Tab",
+  "description": "Simple extenstion to override default new tab page into a Beautiful one",
+  "version": "1.0",
+  "chrome_url_overrides": { "newtab": "index.html" },
+  "manifest_version": 2
+}
