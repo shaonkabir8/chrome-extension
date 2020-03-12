@@ -1,10 +1,9 @@
 // Running Clock
 setInterval(() => {
-  const time = document.getElementById(
+  const time = (document.getElementById(
     "time"
-  ).innerHTML = new Date().toLocaleTimeString();
+  ).innerHTML = new Date().toLocaleTimeString());
 });
-
 
 // Current Day, Month and Year
 const monthNames = [
