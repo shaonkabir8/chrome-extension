@@ -7,8 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h3>A Beautiful Chrome New Tab. Sounds crazy ?? Ha ha aha !</h3>
+    <main class="container">
+        <h1 class="heading">Welcome <span class="heading__title">Shaon Kabir</span></h1>
+        <div class="time-area">
+            <span id="time"></span>
+            <span id="date"></span>
+        </div>
     </main>
+
+
+    <script>
+        const time = document.getElementById('time');
+        const date = document.getElementById('date');
+
+        time.innerHTML = new Date().toLocaleTimeString()
+        
+
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+        let dateObj = new Date();
+        let month = monthNames[dateObj.getMonth()];
+        let day = String(dateObj.getDate()).padStart(2, '0');
+        let year = dateObj.getFullYear();
+        let output = `(${day} ${month}, ${year})`;
+
+        date.innerHTML = output;
+    </script>
 </body>
 </html>

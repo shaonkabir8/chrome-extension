@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: monospace;
+    animation: fadein 3s;
+    max-width: 960px;
+    min-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#111a28;
+    color: #fff;
+    
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 60px;
+    
+}
+
+
+.heading__title{
+    color: #00cf5d;
+}
+
+.heading__title::selection {
+    color: #ffffff;
+}
+
+
+/* Smooth animation while opeing new tab */
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Change Text Selection Color */
+::selection {
+    background: #00cf5d;
+}
+
+
+/* Styles for Time Format */
+
+.time-area {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#date {
+    color: #00cf5d;
+    font-size: 20px;
+}
