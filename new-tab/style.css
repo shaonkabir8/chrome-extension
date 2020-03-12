@@ -11,7 +11,7 @@ body {
     line-height: 1.7;
     font-family: 'Lobster', cursive;
     animation: fadein 3s;
-    max-width: 960px;
+    max-width: 100vw;
     min-width: 250px;
     margin: 0 auto;
     display: flex;
@@ -69,4 +69,51 @@ body {
     font-size: 20px;
     font-weight: 100;
     font-style: italic;
+}
+
+/* Google Search Form */
+
+.form {
+    margin-top: 5px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #101c33;
+    border-radius: 5px;
+    color: #fff;
+    border-bottom: 3px solid #223965;
+    transition: all .3s linear;
+}
+
+.form__input:focus {
+    outline: none;
+    border-bottom: 3px solid#00cf5d;
+}
+
+input::-webkit-input-placeholder{
+    color: white;
+}
+
+.form__label {
+    display: block;
+    margin-left: 1rem;
+    margin-top: .7rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all .3s;
+    font-style: italic;
+    font-family: initial;
+    letter-spacing: 2px;
+    color: #00cf5d;
+}
+
+
+
+.form__input:placeholder-shown +.form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1.2rem);
 }
