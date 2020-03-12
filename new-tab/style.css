@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 body {
     font-size: 16px;
     line-height: 1.7;
-    font-family: monospace;
+    font-family: 'Lobster', cursive;
     animation: fadein 3s;
     max-width: 960px;
     min-width: 250px;
@@ -65,4 +67,6 @@ body {
 #date {
     color: #00cf5d;
     font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
 }
