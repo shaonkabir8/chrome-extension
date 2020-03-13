@@ -48,3 +48,22 @@ form.addEventListener('submit', function(e) {
   // redirect to google with query string
   window.location.replace(`https://google.com/search?q=${searchQuery}`)
 })
+
+
+
+// Generate Greetings!
+const weatherCondition = (hour) => {
+  if (hour > 11 && hour < 19) {
+    return 'afternoon';
+  } else if (hour > 18) {
+    return 'evening';
+  } else {
+    return 'morning';
+  }
+}
+
+// Grab current hour to calculate weather condition
+const currentHour = new Date().getHours()
+
+// select element and update DOM
+document.querySelector('.condition').innerHTML = weatherCondition(currentHour);
